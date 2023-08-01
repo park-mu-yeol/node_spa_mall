@@ -17,6 +17,7 @@ app.post("/",(req,res)=>{
 app.get("/",(req,res)=>{
   console.log(req.query);
 
+  
   res.status(400).json({
     "KeyKey" : "value입니다.",
     "이름입니다." : "이름일까요?",

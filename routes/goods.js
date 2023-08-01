@@ -108,6 +108,8 @@ router.post("/goods/",async (req,res)=>{
 
     const goods = await Goods.find({goodsId});
 
+
+    
     if(goods.length){
         return res.status(400).json({
             success:false, 
